@@ -1,0 +1,25 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  /*Specify Node Envi for Heroku*/ //2.
+  "engines": {
+    "node" : "6.11.1",
+    "npm": "3.10.10"
+  },
+  "scripts": {
+    // Specify start script //3.
+    "start": "node index.js"
+    //"test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.1"
+  }
+}
+// last4.
+// let Heroku install all of our dependencies it self 
+// not to commit any dependency that we created
+// git ignore -> not to commit the entire folder of node modules
